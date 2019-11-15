@@ -21,16 +21,8 @@ duplicates = []
     for name_2 in names_2:
         if name_1 == name_2:
             duplicates.append(name_1)"""
-
-class BinarySearchTree:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
-
-bt = BinarySearchTree(names_1)
 for name in names_2:     # This is O(n) as we iterate and repeat this step
-    if name in bt.value:
+    if name in names_1:
         duplicates.append(name)
 
 end_time = time.time()
